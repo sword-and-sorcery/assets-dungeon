@@ -7,6 +7,8 @@ class AssetsDungeon(ConanFile):
     topics = "assets", "dungeon"
     url = "https://www.patreon.com/posts/modular-dungeon-19227322"
 
+    exports_sources = "Dungeon Tiles.xml"
+
     def source(self):
         url = "https://www.patreon.com/file?h=19227322&i=2255154"
         tools.get(url, filename="tileset")
@@ -15,7 +17,6 @@ class AssetsDungeon(ConanFile):
         self.cpp_info.resdirs = ["tileset",]
 
     def package(self):
-        self.copy("board.xml", dst="tileset")
+        self.copy("Dungeon Tiles.xml", dst="tileset")
         self.copy("*.png", dst="tileset")
         self.copy("*.jpg", dst="tileset")
-
