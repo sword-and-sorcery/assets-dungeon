@@ -17,6 +17,6 @@ class AssetsDungeon(ConanFile):
         self.cpp_info.resdirs = ["tileset",]
 
     def package(self):
-        self.copy("Dungeon Tiles.xml", dst="tileset")
+        self.copy("Dungeon Tiles.xml", dst="tileset/Dungeon Tiles")
         self.copy("*.png", dst="tileset")
         self.copy("*.jpg", dst="tileset")
