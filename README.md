@@ -1,5 +1,7 @@
 # assets-dungeon
 
+> ⚠️ **Full docs**: https://sword-and-sorcery.github.io/sword-and-sorcery/
+
 Assets for a dungeon
 
 ```
